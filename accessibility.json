@@ -1,0 +1,34 @@
+{
+  "accessibility": {
+    "wcag_level": "AA",
+    "landmarks": {
+      "banner": ".site-header",
+      "main": ".hero",
+      "contentinfo": ".site-footer"
+    },
+    "aria_labels": {
+      "navigation": "Primary navigation",
+      "hero_section": "Lores Edge proprietary trading strategy"
+    },
+    "keyboard_navigation": {
+      "supported": true,
+      "visible_focus": true,
+      "tab_order": ["nav-links", "start", "performance", "talk"]
+    },
+    "screen_reader": {
+      "headings_structure": {
+        "h1_count": 1
+      },
+      "landmark_navigation": true
+    },
+    "contrast_ratio": {
+      "text_vs_background": "4.5:1",
+      "interactive_elements": "3:1"
+    },
+    "agentic_accessibility": {
+      "semantic_html": true,
+      "programmatic_labels": true,
+      "structured_data": true
+    }
+  }
+}
