@@ -246,12 +246,7 @@ body {
   }
 
   .hero-headline {
-    position: absolute;
-    top: 8%;
-    left: var(--space-lg);
     font-size: var(--headline-size-tablet);
-    max-width: calc(100% - var(--space-lg) * 2);
-    text-align: left;
   }
 
   .site-footer {
@@ -291,13 +286,7 @@ body {
   }
 
   .hero-headline {
-    position: absolute;
-    top: 8%;
-    left: var(--space-md);
     font-size: var(--headline-size-mobile);
-    max-width: calc(100% - var(--space-md) * 2);
-    letter-spacing: 0.04em;
-    text-align: left;
   }
 
   .site-footer {
@@ -342,12 +331,7 @@ body {
   }
 
   .hero-headline {
-    position: absolute;
-    top: 10%;
-    left: 1rem;
     font-size: 1.55rem;
-    max-width: calc(100% - 2rem);
-    text-align: left;
   }
 
   .site-footer {
