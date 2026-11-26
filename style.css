@@ -173,7 +173,7 @@ body {
 
 .hero-headline {
   position: absolute;
-  top: calc(50% - 14rem);
+  top: 25%;
   left: var(--space-xl);
   z-index: 2;
 
@@ -247,7 +247,7 @@ body {
 
   .hero-headline {
     position: absolute;
-    top: 0.75%;
+    top: 8%;
     left: var(--space-lg);
     font-size: var(--headline-size-tablet);
     max-width: calc(100% - var(--space-lg) * 2);
@@ -292,7 +292,7 @@ body {
 
   .hero-headline {
     position: absolute;
-    top: 0.75%;
+    top: 8%;
     left: var(--space-md);
     font-size: var(--headline-size-mobile);
     max-width: calc(100% - var(--space-md) * 2);
@@ -343,7 +343,7 @@ body {
 
   .hero-headline {
     position: absolute;
-    top: 0.4%;
+    top: 10%;
     left: 1rem;
     font-size: 1.55rem;
     max-width: calc(100% - 2rem);
