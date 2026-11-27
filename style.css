@@ -60,28 +60,26 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(3rem, 20vh, 12rem) var(--space-xl) var(--space-xl);
+
+  min-height: clamp(420px, 65vh, 800px);
+  min-height: clamp(420px, 65svh, 800px);
 
   background-image: url("images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 50%;
   background-color: #000;
-
-  position: relative;
   overflow: hidden;
-}
-
-.hero {
-  position: relative;
-  z-index: 1;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: var(--space-lg);
-
-  min-height: 100%;
 }
 
 .hero::before {
@@ -107,6 +105,7 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: #000;
 
   display: flex;
   align-items: center;
@@ -172,9 +171,7 @@ body {
 /* Main headline */
 
 .hero-headline {
-  position: absolute;
-  top: 20vh;
-  left: var(--space-xl);
+  position: relative;
   z-index: 2;
 
   font-family: var(--font-body);
@@ -242,7 +239,7 @@ body {
   }
 
   .hero {
-    padding: var(--space-lg);
+    padding: clamp(3rem, 20vh, 11rem) var(--space-lg) var(--space-lg);
   }
 
   .hero-headline {
@@ -279,9 +276,14 @@ body {
     font-size: 0.85rem;
   }
 
+  .hero-container {
+    min-height: auto;
+  }
+
   .hero {
-    padding: var(--space-md);
-    min-height: 100svh;
+    padding: clamp(3rem, 20vh, 10rem) var(--space-md) var(--space-lg);
+    min-height: calc(100vh - 4.75rem);
+    min-height: calc(100svh - 4.75rem);
     background-position: 40% center;
   }
 
@@ -327,7 +329,7 @@ body {
   }
 
   .hero {
-    padding: 1rem;
+    padding: clamp(3rem, 20vh, 9rem) 1rem var(--space-lg);
   }
 
   .hero-headline {
@@ -337,6 +339,56 @@ body {
   .site-footer {
     background-color: #000;
     padding: 0.75rem;
+  }
+}
+
+/* Mobile landscape / short viewports */
+
+@media (orientation: landscape) and (max-height: 540px) {
+  .site-header {
+    padding: 0.75rem var(--space-lg);
+  }
+
+  .logo-lores {
+    font-size: var(--logo-size-mobile);
+  }
+
+  .logo-edge {
+    font-size: 0.8rem;
+  }
+
+  .site-nav {
+    gap: var(--space-md);
+  }
+
+  .site-nav a {
+    font-size: 0.85rem;
+  }
+
+  .hero-container {
+    min-height: auto;
+  }
+
+  .hero {
+    min-height: max(260px, calc(100vh - 3.25rem));
+    min-height: max(260px, calc(100svh - 3.25rem));
+    justify-content: center;
+    padding: var(--space-md) var(--space-lg);
+    background-position: 40% 50%;
+  }
+
+  .hero-headline {
+    font-size: clamp(1.35rem, 6.5svh, 2rem);
+  }
+
+  .site-footer {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .legal {
+    font-size: 0.7rem;
+    line-height: 1.45;
+    max-width: 100%;
   }
 }
 
